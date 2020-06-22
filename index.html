@@ -26,9 +26,45 @@
     <title>jjhexample</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="body__container">
+
+        <!-- HEADER -->
+       <header class="section">
+           <div class="inner clearfix">
+               <div class="menu-group float--left">
+                   <ul class="main-menu">
+                      <li>
+                          <a href="#">my_page</a>
+                          <a href="#">Novel Relay</a>
+                          <a href="#">Option</a>
+                          <a href="#">Friends</a>
+                      </li>
+                </ul>
+            </div>
+                <div class="search-group float--right">
+                    <div class="btn-group">
+                        <a class="btn search-in"href="#">Search</a>
+                    </div>
+                <form id="search-form" method="POST" action="">
+                    <input type="text" id="search" class="input--text" placeholder="Search Novel">
+                    <input type="submit">
+                </form>
+                </div>
+         </div>
+       </header>
+<!-- Visual -->
+    <section class="section section--visual">
+        <div class="login-group">
+       <div class="sign-in">sign</div>
+       <div class="login-toggle">login</div>
+        </div>
+    </section>
+
+    </div>
+   <script src="main.js"></script>
     
 </body>
 </html>
