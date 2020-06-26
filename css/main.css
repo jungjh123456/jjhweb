@@ -221,30 +221,48 @@ header .sign-box.on{
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 200px;
-    background: red;
+    background-color: #b6bcc0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.section--visual::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0; /*w:100% h:100%랑 같다*/
+    right: 0;
+    background: rgba(0,0,0,0.1);
 }
 
 section .inner {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 section .summary {
     width: 300px;
     height: 150px;
-    background: black;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-section .summary {
+section .summary__title{
     font-size: 50px;
-    font-weight: 500;
-    color: #4078c0
+    font-weight: 800;
+    color: #4078c0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25)
+    ,0 1px 25px rgba(0,0,0,.75);
 }
 
 
