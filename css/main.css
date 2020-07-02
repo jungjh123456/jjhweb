@@ -164,6 +164,7 @@ header .sign-box {
     justify-content: center;
     margin: 0 auto;
     right: 400px;
+    z-index: 1;
 }
 #sign-form {
    
@@ -267,39 +268,48 @@ header .sign-box.on{
   padding-top: 66px;
   background: #f5f5f5;
   position: relative;
+  padding-top: 0px;
 
+}
+.section--slideBox .summary{
+    position: absolute;
+    display: flex;
+    top: 30px;
+    
+}
+.section--slideBox .summary__title {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .section--slideBox .inner {
+    border: 2px solid #51a7e8;
+    padding-top: 50px;
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 100px;
+    
 
-    max-width: 820px;
-    height: 300px;
-    margin-bottom: 30px;
-    position: relative;
-    bottom: 30px;
+
 
 }
 
-.section--slideBox .summary{
-  
-    max-width: 820px;
-    position: absolute;
-   
-}
-.section--slideBox .inner ul{
+.section--slideBox .inner .slide{
   
     display: flex;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     position: absolute;
-    left: 5px;
-    right: -30px;
+
     
 
     
 }
 
-.section--slideBox .inner ul li{
+.section--slideBox .inner .slide li{
     margin-right: 10px;
     box-sizing: border-box;
     display: flex;
@@ -308,7 +318,7 @@ header .sign-box.on{
 
 }
 
-.section--slideBox .inner ul li a{
+.section--slideBox .inner .slide li a{
     width: 150px;
     height: 300px;
     display: block;
@@ -317,48 +327,124 @@ header .sign-box.on{
 }
 
 
- .section--slideBox .inner ul li:nth-child(1){
+ .section--slideBox .inner .slide li:nth-child(1){
     background-color: rgb(202, 124, 124);
-    transform: translateX(0px);
+    
 
 }
 
-.section--slideBox .inner ul li:nth-child(1):hover {
+.section--slideBox .inner .slide li:nth-child(1):hover {
     transform: scale(1,1);
+    animation: sliderA 2s;
+    animation-fill-mode: both ;
 }
-.section--slideBox .inner ul li:nth-child(2){
+
+@keyframes sliderA{
+    0%{
+      
+    }
+    25%{
+        z-index: 3;
+    }
+    100%{
+        z-index: 3;
+        transform: scale(1.5,1.5);
+     
+    }
+}
+.section--slideBox .inner .slide li:nth-child(2){
     background-color: rgb(88, 88, 192);
     transform: translateX(-10px);
 }
-.section--slideBox .inner ul li:nth-child(2):hover {
-    transform: scale(1,1);
+.section--slideBox .inner .slide li:nth-child(2):hover {
+    animation: sliderB 2s;
+    animation-fill-mode: both;
 }
-.section--slideBox .inner ul li:nth-child(3){
+
+@keyframes sliderB{
+    0%{
+       
+    }
+    25%{
+        z-index: 3;
+    }
+    100%{
+        z-index: 2;
+        transform: scale(1.5,1.5);
+     
+    }
+}
+
+.section--slideBox .inner .slide li:nth-child(3){
     background-color: rgb(70, 32, 32);
     transform: translateX(-20px);
 }
-.section--slideBox .inner ul li:nth-child(3):hover {
-    transform: scale(1,1);
+.section--slideBox .inner .slide li:nth-child(3):hover {
+    animation: sliderC 2s;
+    animation-fill-mode: both;
 }
-.section--slideBox .inner ul li:nth-child(4){
+
+@keyframes sliderC{
+    0%{
+       
+    }
+    25%{
+        z-index: 2;
+    }
+    100%{
+        z-index: 2;
+        transform: scale(1.5,1.5);
+     
+    }
+}
+
+.section--slideBox .inner .slide li:nth-child(4){
     background-color: rgb(128, 125, 125);
     transform: translateX(-30px);
 }
-.section--slideBox .inner ul li:nth-child(4):hover {
-    transform: scale(1,1);
+.section--slideBox .inner .slide li:nth-child(4):hover {
+    animation: sliderD 2s;
+    animation-fill-mode: both ;
 }
-.section--slideBox .inner ul li:nth-child(5){
+
+@keyframes sliderD{
+    0%{
+    
+    }
+    25%{
+        z-index: 2;
+    }
+    100%{
+        z-index: 2;
+        transform: scale(1.5,1.5);
+     
+    }
+}
+
+.section--slideBox .inner .slide li:nth-child(5){
     background-color: rgb(156, 209, 51);
-    transform: translateX(-40px);
+    transform: translateX(-50px);
  
 } 
 
-.section--slideBox .inner ul li:nth-child(5):hover {
-    transform: scale(1,1);
+.section--slideBox .inner .slide li:nth-child(5):hover {
+    animation: sliderE 2s;
+    animation-fill-mode: both;
 }
 
-
-
+@keyframes sliderE{
+    0%{
+       
+    }
+    25%{
+        z-index: 3;
+    }
+    100%{
+        z-index: 3;
+        transform: scale(1.5,1.5);
+     
+    }
+}
 
 /*  
 .section--visual .summary {
