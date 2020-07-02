@@ -1,16 +1,16 @@
 const open = document.querySelector('.login-btn');
 const modal = document.querySelector('.sign-box');
-
+const slider = document.querySelectorAll('a');
 
 open.onclick = () => {
     modal.style.display = "flex";
 }
 
-document.body.addEventListener('onclick', function(){
-    if(modal.style.display = "flex"){
-        modal.style.display = "none";
-    }
-})
+slider.onclick = () =>{
+    console.log('ddd')
+}
+
+
 
 
 
