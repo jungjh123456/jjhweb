@@ -1,15 +1,21 @@
+// open.onclick = () => {
+//     modal.style.display = "flex";
+// }
+function open(){
+
 const open = document.querySelector('.login-btn');
-const modal = document.querySelector('.sign-box');
-const slider = document.querySelectorAll('a');
+const modal = document.querySelector('.sign-box-group');
 
-open.onclick = () => {
-    modal.style.display = "flex";
+open.addEventListener('click', function() {
+    if(modal.classList.contains('on')){
+        modal.classList.remove('on');
+    }else {
+        modal.classList.add('on');
+    }
+});
 }
 
-slider.onclick = () =>{
-    console.log('ddd')
-}
-
+open();
 
 
 
