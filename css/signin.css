@@ -1,0 +1,38 @@
+.body__container {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#333;
+}
+
+.section {
+
+}
+
+.section .inner {
+    background: red;
+   max-width: 1200px;
+   margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.section .inner .menu-group {
+    display: flex;
+    border: 4px solid;
+}
+
+.section .inner .menu-group .main-menu {
+    display: flex;
+}
+
+.section .inner .sub-group {
+   border: 4px solid;
+}
+
+.section .inner .sub-group .sub-menu {
+  
+}
+
+
