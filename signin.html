@@ -10,31 +10,59 @@
 </head>
 <body>
     <div class="body__container">
-    <header>
-        <div class="section">
-            <div class="inner">
-                <div class="menu-group">
+    <header class="section">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <div class="logo"><a href="#">로고</a></div>
+                    
                 
                         <ul class="main-menu">
-                            <li><a href="#">A</a></li>
-                            <li><a href="#">B</a></li>
-                            <li><a href="#">C</a></li>
-                            <li><a href="#">D</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">trip</a></li>
+                            <li><a href="#">action</a></li>
+                            <li><a href="#">OTPKL</a></li>
                         </ul>
                  
                 </div>
-                    <div class="sub-group">
+                    <div class="sub-group float--right">
                         <ul class="sub-menu">
-                            <li><a href="#">A</a></li>
-                            <li><a href="#">B</a></li>
-                            <li><a href="#">C</a></li>
-                            <li><a href="#">D</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            
                         </ul>
+                        <form id="searchform" method="POST" action="">
+                            <input class="search-input" type="text" placeholder="Search">
+                            <span class="search-text">이곳에 마우스를 갖다대면 찾기가&nbsp;나옵니다.</span>
+                            <input type="submit" value="submit">
+                        </form>
                     </div>
                 
             </div>
         </div>
     </header>
+
+    <!--회원가입-->
+
+    <section class="section section--visulal">
+        
+        <div class="visulal">
+           <form id="sign-in" method="POST" action="">
+              <div class="email-group">
+                  <input class="sign-email" type="email" placeholder="email">
+                  
+              </div>
+               <input class="sign-password" type="password" placeholder="비밀번호 입력">
+               <input class="sign-password" type="password" placeholder="2차 비밀번호 입력">
+               
+               <button class="btn" type="submit">회원가입</button>
+           </form>
+          
+
+        </div>
+   
+    </section>    
+
+
 </div>
 </body>
 </html>

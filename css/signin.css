@@ -3,36 +3,238 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color:#333;
+    background: #031321;
+    width: 100%;
+ 
+    
+}
+.float--left {
+    float: left;
 }
 
-.section {
+.float--right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
+/*공통 부분*/
+.section {
+    position: relative;
 }
 
 .section .inner {
-    background: red;
-   max-width: 1200px;
-   margin: 0 auto;
-    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
-.section .inner .menu-group {
-    display: flex;
-    border: 4px solid;
+a {
+    text-decoration: none;
 }
 
-.section .inner .menu-group .main-menu {
+.btn {
+    width: 75px;
+    height: 34px;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee); /*흰색에 가까운 튀어나온것 처럼 linear를 하고 싶다 to bottom 아래쪽으로 방향을 가지는  */
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    display: flex; /*flex는 block요소 처럼 만들어 진다 width는 auto이다 inline요소면 글자에 맞게 고정된다.*/
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(185, 177, 177);
+  }
+  
+  .btn:hover{ /*가상요소선택 앞쪽에 요소를 만든다.*/
+   
+
+    display: block;
+    color: #eee;
+    box-sizing: border-box;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+    transition: 2s;
+  }
+  
+
+/*header*/
+header{
+    border-bottom: 1px solid rgb(190, 182, 182);
+    position: relative;
+}
+header .inner {
+    height: 78px;
+}
+
+header .menu-group {
     display: flex;
+    align-items: center;
+    height: 100%;
+}
+header .menu-group .logo{
+    margin-right: 60px;
+    margin-left: 20px;
+}
+header .menu-group .logo a {
+    display: block;
+    width: 32px;
+    height: 17px;
+ 
 }
 
-.section .inner .sub-group {
-   border: 4px solid;
+header .main-menu {
+    display: flex;
+    justify-content: center;
+}
+header .main-menu li {
+    
+
+}
+header .main-menu li:last-child{
+    border-right: none;
+}
+header .main-menu li a {
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(185, 177, 177);
 }
 
-.section .inner .sub-group .sub-menu {
+
+
+header .main-menu li a:hover {
+    display: block;
+    padding: 20px;
+    color: #eee;
+    box-sizing: border-box;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+    transition: 2s;
+}
+
+header .sub-group{
+   display: flex;
+   height: 100%;
+}
+
+#searchform {
+    order: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#searchform .search-input{
+    display: flex;
+    height: 30px;
+    font-size: 25px;
+    width: 300px;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 20px #2196f3,
+ 0 0 30px #2196f3;
+ opacity: 0;
+ z-index: 1;
+}
+
+#searchform .search-input:hover {
+    opacity: 1;
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+
+
+
+#searchform .search-text {
+    position: absolute;
+    right:30px;
+    z-index: 0;
+}
+
+#searchform > [type="submit"]{
+    display: none;
+}
+header .sub-group .sub-menu{
+   display: flex;
+   order: 2;
+   align-items: center;
+
+}
+header .sub-group .sub-menu li {
+
+}
+
+header .sub-group .sub-menu li a{
+    display: block;
+    padding: 20px;
+    color: rgb(185, 177, 177);
+    transition: 2s;
+}
+
+header .sub-group .sub-menu li a:hover {
+    color: #eee;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+}
+
+/* 회원가입 */
+
+section {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 0;
+    background: #031321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section--visulal .visulal {
+    height: 600px;
+    width: 500px;
+    display: block;
+}
+.section--visulal .email-group {
+    display: flex;
+    justify-content: center;
+}
+
+#sign-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   
 }
 
+.section--visulal .sign-email {
+    margin-bottom: 10px;
+}
 
+.section--visulal .sign-password {
+    margin-bottom: 10px;
+}
+
+.section--visulal .visulal .btn-box {
+    margin: 0 auto;
+    margin-top: 10px;
+}
