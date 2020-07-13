@@ -291,6 +291,7 @@ header .sub-group .sub-menu li a:hover {
   }
 
 
+
 nav .section {
     height: 100vh;
     background: #031321;
@@ -533,4 +534,10 @@ nav .left-menu .sidemenu5 li a:hover {
 }
 nav .left-menu .sidemenu5.on{
     display: block
+}
+
+main {
+    display: flex;
+    
+    align-items: center;
 }
