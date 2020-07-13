@@ -345,12 +345,21 @@ nav .left-menu .sidemenu li{
     width: 100%;
 }
 nav .left-menu .sidemenu li a{
-    
     display: flex;
     padding: 20px;
     justify-content: center;
     transition: 2s;
 
+}
+
+nav .left-menu .sidemenu li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
 }
 
 nav .left-menu .sidemenu.on{
@@ -370,13 +379,23 @@ nav .left-menu .sidemenu1 li{
     width: 100%;
 }
 nav .left-menu .sidemenu1 li a{
-    
     display: flex;
     padding: 20px;
     justify-content: center;
     transition: 2s;
 
 }
+
+nav .left-menu .sidemenu1 li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
+}
+
 
 nav .left-menu .sidemenu1.on{
     display: block
@@ -394,12 +413,21 @@ nav .left-menu .sidemenu2 li{
     width: 100%;
 }
 nav .left-menu .sidemenu2 li a{
-    
     display: flex;
     padding: 20px;
     justify-content: center;
     transition: 2s;
 
+}
+
+nav .left-menu .sidemenu2 li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
 }
 
 nav .left-menu .sidemenu2.on{
@@ -418,12 +446,21 @@ nav .left-menu .sidemenu3 li{
     width: 100%;
 }
 nav .left-menu .sidemenu3 li a{
-    
     display: flex;
     padding: 20px;
     justify-content: center;
     transition: 2s;
 
+}
+
+nav .left-menu .sidemenu3 li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
 }
 
 nav .left-menu .sidemenu3.on{
@@ -443,12 +480,21 @@ nav .left-menu .sidemenu4 li{
     width: 100%;
 }
 nav .left-menu .sidemenu4 li a{
-    
     display: flex;
     padding: 20px;
     justify-content: center;
     transition: 2s;
 
+}
+
+nav .left-menu .sidemenu4 li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
 }
 
 nav .left-menu .sidemenu4.on{
@@ -476,6 +522,15 @@ nav .left-menu .sidemenu5 li a{
 
 }
 
+nav .left-menu .sidemenu5 li a:hover {
+    color: #eee;
+    background: #82bae9;
+    box-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+    border-right: 2px solid #82bae9;
+}
 nav .left-menu .sidemenu5.on{
     display: block
 }
