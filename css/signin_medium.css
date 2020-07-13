@@ -37,6 +37,7 @@ header .sub-menu {
 header .sub-menu li {
     width: 100%;
     order: 1;
+    text-align: center;
 }
 #searchform {
     

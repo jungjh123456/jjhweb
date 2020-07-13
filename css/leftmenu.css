@@ -1,0 +1,18 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background: #031321;
+}
+
+.section {
+ 
+
+}
+
+.section .left-menu {
+ border: 2px solid;
+ display: flex;
+ flex-direction: column;
+}
