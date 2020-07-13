@@ -67,8 +67,87 @@ a {
     0 0 100px #2196f3;
     transition: 2s;
   }
-  
 
+  .btn--signin {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px; /*글자 간격 (span영역 inline요소여서 나중에 text로 취급 간격이 4px 로 애니메이션 넣게*/
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+.btn--signin:hover 
+  {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3
+    ,0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+  }
+  .btn--signin span {
+    position: absolute;
+    display: block;
+  }
+  .btn--signin span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+  }
+  
+.btn--signin:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+  }
+
+.btn--signin span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+  }
+  
+.btn--signin:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  
+.btn--signin span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+  }
+  
+ .btn--signin:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+ .btn--signin span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+  }
+  
+ .btn--signin:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
 /*header*/
 header{
     border-bottom: 1px solid rgb(190, 182, 182);
@@ -151,7 +230,9 @@ header .sub-group{
  z-index: 1;
 }
 
-#searchform .search-input:hover {
+#searchform .search-input:hover,
+#searchform .search-input:focus{
+
     opacity: 1;
     transition: 2s;
     transition-timing-function: ease;
@@ -209,13 +290,15 @@ section {
     align-items: center;
 }
 .section--visulal .visulal {
-    height: 600px;
-    width: 500px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section--visulal .email-group {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    
 }
 
 #sign-in{
@@ -224,17 +307,57 @@ section {
   align-items: center;
   flex-direction: column;
   
+  
 }
 
 .section--visulal .sign-email {
     margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
+.section--visulal .sign-email:focus{
+    background: #d3d9dd;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+} 
 
 .section--visulal .sign-password {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.section--visulal .sign-password:focus{
+    background: #d3d9dd;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
 }
 
 .section--visulal .visulal .btn-box {
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 60px;
 }
+
+
+
+#toggle-btn{
+    display: none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }

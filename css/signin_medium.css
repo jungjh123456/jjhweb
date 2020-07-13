@@ -1,0 +1,72 @@
+header.section .inner {
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+}
+
+header .menu-group,
+header .sign-group {
+    float: none;
+}
+header .menu-group{
+    display: block;
+}
+header .logo{
+    padding: 20px 0;
+}
+
+header .main-menu {
+    display: block;
+    margin-bottom: 10px;
+}
+header .main-menu li {
+    border-top: 1px solid #9b9898;
+}
+header .main-menu li a{
+   padding: 16px 0;
+}
+
+header .sub-group {
+    display: block;
+    width: 100%;
+}
+header .sub-menu {
+    display: block;
+    flex-direction: column;
+}
+header .sub-menu li {
+    width: 100%;
+    order: 1;
+}
+#searchform {
+    
+}
+
+#searchform .search-input{
+    opacity: 1;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 5px;
+}
+#searchform .search-input:focus {
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+}
+#searchform .search-text{
+    display: none;
+}
+
+header .toggle {
+    display: none;
+}
+
+header .toggle.on{
+    display: block;
+}
+
+#toggle-btn{
+    display: block;
+  }
+
