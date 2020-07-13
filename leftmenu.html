@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,105 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/leftmenu.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="./css/signin_medium.css">
+    <script defer src="./login.js"></script>
+    <script defer src="./leftmenu.js"></script>
 </head>
+
 <body>
-    <header class="section">
-        <div class="left-menu">
-            <ul class="menu">
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-            </ul>
-        </div>
+    <div class="body--container">
+        <header class="section">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <div class="logo"><a href="#">로고</a></div>
+
+
+                    <ul class="main-menu toggle">
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">trip</a></li>
+                        <li><a href="#">action</a></li>
+                        <li><a href="#">OTPKL</a></li>
+                    </ul>
+
+                </div>
+                <div class="sub-group float--right toggle">
+                    <form id="searchform" method="POST" action="">
+                        <input class="search-input" type="text" placeholder="Search">
+                        <span class="search-text">이곳에 마우스를 갖다대면 찾기가&nbsp;나옵니다.</span>
+                        <input type="submit" value="submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div id="toggle-btn">Toggle Btn</div>
+            </div>
+    </div>
     </header>
-    
+
+    <nav>
+        <div class="section">
+            <div class="inner">
+                <ul class="left-menu">
+             
+                    <li id="listbtn" ><a href="#">A</a>
+                        <ul class="sidemenu">
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                            <li><a href="#">안녕</a></li>
+                        </ul>
+                    </li>
+
+                
+                    <li id="listbtn1"><a href="#">B</a>
+                        <ul class="sidemenu1">
+                            <li><a href="#">안녕1</a></li>
+                            <li><a href="#">안녕2</a></li>
+                            <li><a href="#">안녕3</a></li>
+                        </ul>
+                    </li>
+                    <li id="listbtn2"><a href="#">C</a>
+                        <ul class="sidemenu2">
+                            <li><a href="#">안녕4</a></li>
+                            <li><a href="#">안녕5</a></li>
+                            <li><a href="#">안녕6</a></li>
+                        </ul>
+                    </li>
+                    <li id="listbtn3"><a href="#">D</a>
+                        <ul class="sidemenu3">
+                            <li><a href="#">안녕7</a></li>
+                            <li><a href="#">안녕8</a></li>
+                            <li><a href="#">안녕9</a></li>
+                        </ul>
+                    </li>
+                    <li id="listbtn4"><a href="#">E</a>
+                        <ul class="sidemenu4">
+                            <li><a href="#">안녕10</a></li>
+                            <li><a href="#">안녕11</a></li>
+                            <li><a href="#">안녕12</a></li>
+                        </ul>
+                    </li>
+                    <li id="listbtn5"><a href="#">F</a>
+                        <ul class="sidemenu5">
+                            <li><a href="#">안녕13</a></li>
+                            <li><a href="#">안녕14</a></li>
+                            <li><a href="#">안녕15</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <main class="section">
+
+    </main>
+    </div>
+
 </body>
+
 </html>
