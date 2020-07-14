@@ -1,0 +1,62 @@
+.body--container{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background: #031321;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*공통 부분*/
+.section {
+  position: relative;
+}
+
+.section .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+header .inner{
+ 
+}
+
+header .summary h2{
+  position: absolute;
+  font-size: 8em;
+  transform: translate(-50%, -50%);;
+}
+
+header .summary h2:nth-child(1){
+   color: transparent;
+   -webkit-text-stroke: 2px #03a9f4;
+}
+
+header .summary h2:nth-child(2){
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+      clip-path: polygon(0 57%, 10% 48%, 21% 43%, 36% 41%, 46% 49%, 50% 56%, 59% 62%, 68% 62%, 81% 55%, 88% 49%, 100% 47%, 100% 59%, 100% 100%, 1% 99%, 1% 99%, 0% 100%, 0% 100%);
+    }
+    50%{
+      clip-path: polygon(0 46%, 7% 56%, 14% 64%, 24% 68%, 34% 67%, 47% 60%, 59% 55%, 68% 51%, 77% 45%, 89% 46%, 98% 58%, 100% 70%, 100% 100%, 1% 100%);
+    }
+    100%{
+      clip-path: polygon(1% 51%, 8% 44%, 26% 42%, 38% 48%, 40% 55%, 48% 65%, 60% 69%, 71% 66%, 85% 57%, 100% 53%, 100% 100%, 0% 100%);
+    }
+}
