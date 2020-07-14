@@ -1,16 +1,13 @@
-body{
-  background: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
 .body__container {
 
 }
 .section {
-
+  font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:#333;
+    background: #031321;
+    width: 100%;
 }
 .section .inner{
   max-width: 980px;
@@ -47,22 +44,4 @@ section .inner{
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-section .group {
-  width: 100%;
-  height: 100%;
-  border: 2px solid red;
-  color: white;
-}
-#login-box{
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-}
-section .group1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
