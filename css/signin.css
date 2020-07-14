@@ -146,6 +146,42 @@ a {
     transition: 1s;
     transition-delay: 0.75s;
   }
+
+  .sign-email {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.sign-email:focus{
+    background: transparent;
+    color: #eee;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+} 
+
+.sign-password {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-password:focus{
+    background: transparent;
+    color: #eee;
+    box-shadow: 0 0 10px #2196f3,
+    0 0 40px #2196f3,
+    0 0 80px #2196f3,
+    0 0 100px #2196f3;
+}
+
 /*header*/
 header{
     border-bottom: 1px solid rgb(190, 182, 182);
