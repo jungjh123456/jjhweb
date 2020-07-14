@@ -12,13 +12,15 @@
   const $slideMenu4 = document.querySelectorAll('.sidemenu4');
   const $listBtn5 = document.getElementById('listbtn5');
   const $slideMenu5 = document.querySelectorAll('.sidemenu5');
-
-  $listBtn.addEventListener('click', function(){
+  
+  
+$listBtn.addEventListener('click', function(){
     onMenu();
 })
 $listBtn1.addEventListener('click', function(){
   onMenu1();
 })
+
 
 function onMenu(){
   [].forEach.call($slideMenu, function(toggle){

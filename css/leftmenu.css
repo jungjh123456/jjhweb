@@ -151,7 +151,7 @@ a {
   }
 /*header*/
 header{
-    border-bottom: 1px solid rgb(190, 182, 182);
+    border-bottom: 1px solid #153550;
     position: relative;
 }
 header .inner {
@@ -290,12 +290,20 @@ header .sub-group .sub-menu li a:hover {
     text-indent: -9999px;
   }
 
+  /*header*/
 
+
+
+ /*leftnav*/
+
+ nav {
+     display: flex;
+ }
 
 nav .section {
     height: 100vh;
     background: #031321;
-    
+    border-right: 2px solid #153550;
 }
 
 nav .section .inner{
@@ -320,7 +328,6 @@ nav .left-menu li a{
     display: flex;
     padding: 20px;
     justify-content: center;
-
     transition: 2s;
 }
 
@@ -535,9 +542,66 @@ nav .left-menu .sidemenu5 li a:hover {
 nav .left-menu .sidemenu5.on{
     display: block
 }
-
+/*leftnev*/
 main {
+    width: 100%;
     display: flex;
-    
-    align-items: center;
+  
+    justify-content: center;
+    flex-direction: column;
 }
+
+
+ main .summary {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+}
+
+main .summary--title {
+    margin-top: 10px;
+}
+    
+
+/*footer*/
+footer {
+    border-top: 2px solid #153550;
+    
+}
+
+footer .inner {
+    padding: 20px 0;
+}
+footer .site-links {
+    display: flex;
+  
+    
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+    
+footer .site-links li {
+    margin-right: 30px;
+    font-size: 12px;
+}
+  
+footer .site-links li a {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #eee;
+    text-shadow: 0 0 10px #82bae9,
+    0 0 40px #82bae9,
+    0 0 80px #82bae9,
+    0 0 100px #82bae9;
+}
+
+    
+    
