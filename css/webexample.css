@@ -1,0 +1,50 @@
+@import url(./normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*모든 요소가 계산되어서 보여진다.*/
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #031321;
+  font-size: 1.6rem;
+  /*부모요소 10px이면 rem은 *10 16px rem단위*/
+  font-family: 'Spoqa Han Sans';
+  color: #181818;
+  font-weight: 400;
+  color: #eee;
+}
+
+
+.body--container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.main {
+  width: 980px;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.main .sidemenu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.main .sidemenu li {
+  margin-right: 10px;
+}
