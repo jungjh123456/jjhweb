@@ -1,0 +1,155 @@
+@import url(./normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*모든 요소가 계산되어서 보여진다.*/
+  list-style: none;
+}
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0,0 0,0 0);
+  height: 1px;
+  overflow: hidden; 
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #031321;
+  font-size: 1.6rem;
+  /*부모요소 10px이면 rem은 *10 16px rem단위*/
+  font-family: 'Spoqa Han Sans';
+  color: #181818;
+  font-weight: 400;
+  color: #eee;
+}
+
+/* 멤버링크 */
+.member{
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 0;
+  margin-right: -8px;;
+  font-size: 0;
+  text-align: right;
+}
+.member li, .member a{
+  display: inline-block;
+}
+
+.member li{
+  font-size: 1.4rem;
+}
+
+
+.body--container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+}
+
+.header, .visual,.main,.slogan,.footer{
+  width: 940px;
+  box-sizing: border-box;
+
+}
+
+/* header */
+
+.header {
+  display: flex;
+  border: 1px solid #000000;
+  padding:0 20px;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.header .group {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: -10px;
+  justify-self: flex-end;
+
+}
+
+/*member*/
+
+.header .member {
+  display: flex;
+
+  justify-content: flex-end;
+  
+}
+
+/*navigation*/
+
+.header .group .navigation{
+  display: flex;
+
+  width: 100%;
+  justify-content: flex-end;
+ 
+}
+
+.header .group .navigation .menu {
+  display: flex;
+ 
+}
+
+
+
+/*sub-menu*/
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+.btn-menu{
+  background-color: transparent;
+  position: relative;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 0;
+  border-left: 2px solid #272727;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #000,
+               1px 0 0 #000,
+               -1px 0 0 #000,
+               0 -1px 0 #000;
+}
+
+.btn-menu:hover {
+  background-color: #042441;
+  box-shadow: 0 0 10px #042441;
+  border-bottom: 1px solid #395774;
+}
+
+.header .group .navigation .menu .sub-menu{
+  position: absolute;
+  display: none;
+}
+.header .group .navigation .menu .sub-menu.on{
+  display: flex;
+}
+
+
+
+
+
