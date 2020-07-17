@@ -204,7 +204,6 @@ body {
   width: 820px;
   display: flex;
   height: 100px;
-
   margin: 0;
   padding: 0;
   justify-content: space-between;
@@ -215,14 +214,35 @@ body {
   margin-bottom: 60px;
   width: 200px;
   position: relative;
+  cursor: pointer;
+  transition: 1s;
 }
-.visual .web-list li a{
-  color: wheat;
-}
-
-.visual .web-list .icon{
+ .visual .web-list li:hover::before
+ 
+ {
+  content: "";
+  display: block;
+  background-image: url(../img/icon.svg);
   position: absolute;
+  right: 20px;
+  width: 23px;
+  height: 28px;
+  color: #eee;
   top: 0;
   right: 5px;
-  fill: #eee;
+  fill: #fff;
+  animation: liAnime 1s ease-in-out;
+}
+
+
+
+@keyframes liAnime {
+  0%{
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  0%{
+    transform: translate(-50px,0);
+    opacity: 1;
+  }
 }
