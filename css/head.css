@@ -172,3 +172,57 @@ body {
 .header .group .navigation .menu .sub-menu2.on {
   display: flex;
 }
+
+
+/*ViSUAL*/
+.visual {
+  border: 1px solid #000;
+  border-radius: 10px;
+  min-height: 450px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.visual .highlight {
+  margin-bottom: 50px;  
+  
+  
+  
+}
+
+.visual .highlight .highlight-span {
+  background-color: #000;
+  display: inline-flex;
+  line-height: 4.2rem;
+  letter-spacing: 1.25rem;
+  
+}
+
+.visual .web-list {
+  width: 820px;
+  display: flex;
+  height: 100px;
+
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.visual .web-list li {
+  border-bottom: 2px solid;
+  margin-bottom: 60px;
+  width: 200px;
+  position: relative;
+}
+.visual .web-list li a{
+  color: wheat;
+}
+
+.visual .web-list .icon{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  fill: #eee;
+}
