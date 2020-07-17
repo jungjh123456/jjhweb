@@ -33,33 +33,22 @@ body{
 
 .container {
   width: 980px;
-  display: flex;
-  justify-content: center;
+  height: 500px;
   border: 2px solid black;
 }
 
 .header {
   display: flex;
   width: 905px;
-  height: 34px;
+  height: 100%;
+  margin: 0 auto;
   border: 2px solid;
   justify-content: space-between;
+  position: relative;
+  
 }
 
-#search {
-  display: flex;
-  align-items: center;
+.menu-style {
+  position: absolute;
+  background-color: black;
 }
-
-#search-text{
-  border-radius: 0;
-  width: 291px;
-  height: 29px;
-}
-
-#search-btn{
-  border-radius: 0;
-  width: 65px;
-  height: 29px;
-}
-
