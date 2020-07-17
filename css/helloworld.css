@@ -1,0 +1,65 @@
+@import url(./normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*모든 요소가 계산되어서 보여진다.*/
+  list-style: none;
+}
+
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 1px;
+  overflow: hidden;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 980px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.header {
+  display: flex;
+  width: 905px;
+  height: 34px;
+  border: 2px solid;
+  justify-content: space-between;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#search-text{
+  border-radius: 0;
+  width: 291px;
+  height: 29px;
+}
+#search-btn{
+  border-radius: 0;
+  width: 65px;
+  height: 29px;
+}
+
