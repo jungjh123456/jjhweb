@@ -8,6 +8,12 @@
   list-style: none;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .a11y-hidden {
   position: absolute;
   width: 1px;
@@ -26,29 +32,165 @@ html {
 }
 
 body{
+  font-size: 1.4rem;
+  /*부모요소 10px이면 rem은 *10 16px rem단위*/
+  font-family: 'Spoqa Han Sans';
+  color: #181818;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  background: url(../img/bg_flower.png) no-repeat 50% 0 scroll,
+  #fff linear-gradient(to bottom,#ccc 0%,#fff 70%, #fff 100% );
+  font-weight: 400;
+  
+
 }
 
 .container {
-  width: 980px;
-  height: 500px;
-  border: 2px solid black;
-}
 
-.header {
   display: flex;
-  width: 905px;
-  height: 100%;
-  margin: 0 auto;
-  border: 2px solid;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+ 
+  width: 940px;
+  box-sizing: border-box;
+  
+  /* margin: 0 auto; */
+}
+.header {
+  padding: 0 30px 0 30px;
   position: relative;
+  background-color: #eee;
+  border-radius: 0 0 15px 15px;
   
 }
 
-.menu-style {
+.logo{
   position: absolute;
-  background-color: black;
+  top: 26px;
+  left: 60px;
+}
+
+/* 멤버링크 */
+.member{
+
+  list-style: none;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 0;
+  margin-right: -8px;;
+  font-size: 0;
+  text-align: right;
+}
+.member li, .member a{
+  display: inline-block;
+}
+
+
+.member li{
+  font-size: 1.4rem;
+  
+  
+}
+
+.member a{
+  text-transform: uppercase;
+  padding: 2px 8px 2px 3px;
+}
+/*Navigation*/
+
+.navigation{
+
+}
+
+.menu{
+  background:  #db5629 linear-gradient(
+    to bottom, 
+    #ef962f 0%,
+    #db5629 35%,
+    #db5629 70%, 
+    #ef962f 100%);
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 35px;
+  padding-left: 225px;
+  border-top: 2px solid #000;
+  border-radius: 0 0 5px 5px;
+  height: 51px;
+}
+.menu-item{
+  float: left;
+}
+
+.btn-menu {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-left: 2px solid rgba(255,255,255,.85);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0 20px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #000,
+  1px 0 0 #000,
+  -1px 0 0 #000,
+  0 -1px 0 #000;
+  line-height: 49px;
+}
+
+
+
+
+
+.sub-menu1 {
+  display: block;
+}
+
+.sub-menu2 {
+  display: none;
+}
+.sub-menu3 {
+  display: none;
+}
+.sub-menu4 {
+  display: none;
+}
+.sub-menu5 {
+  display: none;
+}
+
+.sub-menu6 {
+  display: none;
+}
+
+/*visual*/
+@keyframes textAni{
+  0%{ /*시작*/
+    font-size: 12px;
+    color: rgba(0,0,0,0);
+    transform: translate(0,0);
+  }
+  
+  100%{  /*끝*/
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    transform: translate(400px, 75px);
+  }
+}
+.visual {
+  height: 120px;
+}
+
+.visual-text{
+ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.4rem;
+  animation: textAni 500ms ease-in-out forwards;
+  width: 400px;
+  
 }
