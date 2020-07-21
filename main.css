@@ -36,16 +36,10 @@ body{
 }
 
 .container {
-  display: flex;
+  padding-bottom: 50px;
   border: 0;
   border-bottom: 2px solid;
-  align-items: flex-start;
 
-
- 
-  
-  
-  
 }
 
 
@@ -362,4 +356,108 @@ body{
 
 .member-menu li a:hover {
   background-color: #000;
+}
+
+/* 다음 */
+
+.daum {
+  width: 297px;
+  display: flex;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(196, 196, 190);
+
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+}
+
+.daum-group{
+
+
+}
+
+.daum-group .title {
+  margin: 0;
+  margin-top: 10px;
+  
+}
+.btn-kakao{
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 0);
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+
+.logout-group{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  margin-top: 5px;
+}
+
+.btn-kakao-logout {
+  width: 52px;
+  font-size: 1.0rem;
+  padding: 5px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+.history {
+  
+}
+
+.history li {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.history li a{
+  padding: 2px 4px 2px 4px;
+  color: #000;
+}
+.history li span {
+  color: rgb(0, 0, 255);
+  
+}
+
+.daum-list {
+  width: 297px;
+  display: inline-block;
+  
+  margin:0;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 0;
+}
+.daum-list li{
+  float: left;
+  font-size: 1.1rem;
+  width: 33.3%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid rgb(196, 196, 190);
+  border-top: none;
+}
+.daum-list li:nth-child(1){
+  border-right: none;
+}
+.daum-list li:nth-child(2){
+  border-right: none;
+}
+
+.daum-list li a{
+  display: block;
+  padding: 20px 0;
+  background-color: rgb(235, 235, 235);
+  color: #000;
+}
+.daum-list li a:hover {
+  background-color: #eee;
 }
