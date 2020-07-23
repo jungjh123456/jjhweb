@@ -662,16 +662,7 @@ a {
  
 }
 
-.notice-heading {
- 
- 
-}
-.pds-heading {
-  
-}
-.board section {
 
-}
 
 .notice-list, .pds-list {
   list-style: none;
@@ -689,10 +680,10 @@ a {
   margin-bottom: 10px;
 }
 
-.notice-list li::before, .pds-list li::before {
+.notice-list li a::before, .pds-list li a::before {
   content: '\f192';
   font-family: 'fontello';
-
+  margin-right: 5px;
   width: 1em;
 
 
@@ -703,7 +694,7 @@ a {
   display: inline-block;
   margin:0;
   padding: 0;
-  width: 285px;
+  width: 300px;
   vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
@@ -744,6 +735,7 @@ a {
 }
 
 .notice-more {
+  /* display: none; */
   position: absolute;
   top: 0;
   right: 0;
