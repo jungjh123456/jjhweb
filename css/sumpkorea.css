@@ -1,0 +1,180 @@
+@import url(./normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*모든 요소가 계산되어서 보여진다.*/
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 1px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #009afe url('../img/top_bg.png') top center no-repeat;
+  font-size: 1.6rem;
+  /*부모요소 10px이면 rem은 *10 16px rem단위*/
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  color: #eee;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  max-width: 1220px;
+
+  margin: 0 auto;
+ 
+  
+  
+}
+
+.body--container{
+ 
+}
+
+.header {
+
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  background: #009afe linear-gradient(to bottom, #eee, #aaa);
+  color: rgb(102,102,102);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.venner-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index_menu {
+  display: inline-block;
+  font-size: 0;
+}
+.index_menu span {
+  
+  font-size: 1.2rem;
+}
+.index_menu li {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.index_menu a{
+  padding: 0 2px 0 2px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+}
+
+.nav-menu {
+  display: flex;
+}
+.nav-menu li {
+  border-right: 1px solid #aaa;
+}
+.nav-menu li:last-child{
+  border-right: none;
+}
+
+.nav-menu a {
+  padding: 20px;
+  color: rgb(88, 82, 82);
+  
+  
+}
+.nav-menu a:hover {
+  color: rgb(47, 47, 221);
+  
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+
+#search-text {
+  width: 230px;
+  height: 35px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 15px;
+  margin-left: 12px;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px #aaa;
+  padding: 5px 10px;
+}
+
+#search-text::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+#search-text::-o-input-placeholder {
+  color: #aaa;
+}
+
+
+#search-text::-moz-input-placeholder {
+  color: #aaa;
+}
+
+.btn-search {
+  cursor: pointer;
+ margin: 0;
+ padding: 0;
+  width: 35px;
+  height: 35px;
+  background: url("../img/search-icon.png") center no-repeat;
+  border: 0;
+  transition: 1s;
+}
+
+.btn-search:hover {
+  border-radius: 15px;
+  background: #009afe  url("../img/search-icon.png") center no-repeat;
+  box-shadow: 0 0 10px #009afe;
+}
+
+#toggle-btn{
+  display: none;
+  background: url("../img/toggle-btn.svg");
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: -30px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
