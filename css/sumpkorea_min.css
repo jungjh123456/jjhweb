@@ -1,32 +1,37 @@
 body {
   position: relative;
 }
+.container{
+  max-width: 950px;
+}
 .header {
   
 }
 .navigation {
   width: 100%;
   display: block;
+  border: 2px solid;
+  padding: 0 30px;
 
 }
 
 .navigation h1 img {
   display: block;
-  position: absolute;
-  left: -100px;
+
+ 
 }
 
 .nav-menu {
   display: block;
-  
-  margin-left: 20px;
+  border: 1px solid;
+  margin: 0 auto;
   padding:0;
   
 }
 
 .nav-menu li {
   border-right: none;
-  width: 100%;
+  
   
   padding: 0;
   margin: 0;
@@ -35,6 +40,7 @@ body {
 .nav-menu a{
   display: block;
   margin: 0;
+
   
   padding: 10px 20px;
   border-bottom: 1px solid rgb(228, 224, 240);
@@ -68,4 +74,28 @@ body {
 
 .toggle.on {
   display: block;
+}
+
+.main {
+
+}
+.img {
+  padding: 0;
+  margin: 0 30px;
+
+}
+
+
+
+
+.sump-list li{
+  display: block;
+  width: 50%;
+  height: 300px;
+  
+}
+
+
+.shop-menu li{
+  width: 50%;
 }

@@ -31,7 +31,7 @@
       
      
     </header>
-    <nav class="navigation clearfix">
+    <nav class="navigation">
       <h1>
         <img src="./img/logo.png" alt="SumpKorea">
       </h1>
@@ -43,20 +43,24 @@
         <li><a href="#">게시판</a></li>
       </ul>
       <form class="search toggle" method="POST" action="#">
+        <label for="search-text" class="a11y-hidden">검색어</label>
         <input id="search-text" type="search" name="search" placeholder="검색어를 입력하세요">
-        <button  class="btn-search" type="submit">
-          
+        <label for="btn-search" class="a11y-hidden">전송</label>
+        <button  id="btn-search" type="submit">
+            
         </button>
       </form>
       <div id="toggle-btn"><h2 class="a11y-hidden">Toggle Btn</h2></div>
     </nav>
 
     <main class="main">
-      <div class="img"></div>
+      <div class="img">
+       
+      </div>
 
       <h2 class="heading-name">섬프코리아 <strong>주요생산품</strong></h2>
 
-      <ul class="sump-list">
+      <ul class="sump-list clearfix">
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
@@ -64,11 +68,11 @@
         <li><a href="#"></a></li>
       </ul>
     </main>
-    <seaction class="main-shop">
+    <seaction class="main-shop clearfix">
       <h2 class="a11y-hidden">섬프코리아 쇼핑</h2>
       <h3 class="heading-name">섬프코리아 <strong>쇼핑몰</strong></h3>
 
-      <ul class="shop-menu">
+      <ul class="shop-menu clearfix">
         <li><button class="btn" type="button">어항세트</button>
         <ul class="sub-menu sub-menu1">
           <li><a href="#">마린큐브나노</a></li>
@@ -143,8 +147,9 @@
       <div class="summary">
         <h2 class="summary-title">light 조명장치</h2>
       </div>
-    <iframe width="399" height="319" src="https://www.youtube.com/embed/h553dTF8Cn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
+    <div class="youtu">
+      <iframe width="399" height="319" src="https://www.youtube.com/embed/h553dTF8Cn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </seaction>
   </div>
 

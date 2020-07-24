@@ -1,0 +1,95 @@
+@import url(./normalize.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /*모든 요소가 계산되어서 보여진다.*/
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  height: 1px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+  
+}
+.air-nav {
+  width: 950px;
+  background-color: tomato;
+  position: relative;
+}
+.air-korea {
+  width: 120px;
+  height: 84px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: yellow;
+  
+}
+.btn-air {
+width: 100%;
+height: 100%;
+}
+
+.air-ticketing {
+ margin: 0;
+ padding:0; 
+ display: inline-block;
+ position: absolute;
+ top:34px;
+ left: 150px;
+ font-size: 1.5rem;
+ color: rgb(255, 255, 255);
+ 
+}
+.btn-air-normal {
+  margin-left: 90px;
+  
+  
+}
+.btn-air-bonus {
+ position: absolute;
+ top:31px;
+ left: 278px;
+}
+
+
+.air-form  fieldset{
+  /* display: none; */
+  margin-left: 119px;
+  padding: 20px;
+}
+
+#air-radio {
+ font-size: 1.5rem;
+}
+#air-radio label {
+  
+}
+
+#btn-multi {
+  border: none;
+  color: #eee;
+  text-decoration: underline;
+  background-color: transparent;
+}
