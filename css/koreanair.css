@@ -32,64 +32,361 @@ html {
   font-size: 10px;
   
 }
+
+body {
+  margin: 0;
+}
+
 .air-nav {
-  width: 950px;
-  background-color: tomato;
-  position: relative;
+  display: flex;
+  background-color: #0180a3;
 }
 .air-korea {
-  width: 120px;
-  height: 84px;
   padding: 0;
   margin: 0;
-  display: inline-block;
-  background-color: yellow;
-  
 }
 .btn-air {
-width: 100%;
-height: 100%;
+  border: 0;
+  width: 120px;
+  height: 80px;
+  margin: 0;
+  background-color: #0180a3;
+  cursor: pointer;
+  position: relative;
+  line-height: 100px;
 }
 
-.air-ticketing {
- margin: 0;
- padding:0; 
- display: inline-block;
- position: absolute;
- top:34px;
- left: 150px;
- font-size: 1.5rem;
- color: rgb(255, 255, 255);
- 
-}
-.btn-air-normal {
-  margin-left: 90px;
+.btn-air::before {
+  content: "";
+  width: 27px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 45px;
   
-  
+  background-repeat: no-repeat;
+  background-image: url('../img/air-port.png');
 }
-.btn-air-bonus {
- position: absolute;
- top:31px;
- left: 278px;
+.btn-air:hover {
+  border: 2px solid #000;
 }
 
-
-.air-form  fieldset{
-  /* display: none; */
-  margin-left: 119px;
+.air-group {
   padding: 20px;
 }
 
-#air-radio {
- font-size: 1.5rem;
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-#air-radio label {
-  
+.air-ticketing {
+  margin: 0;
+  margin-right: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-air-normal, .btn-air-bonus {
+  border: 0;
+  width: 125px;
+  height: 26px;
+}
+.btn-air-normal {
+  border-radius: 10px 0 0 10px;
+}
+.btn-air-bonus {
+  border-radius: 0 10px 10px 0;
+  background-color: #27748b;
+  color: #eee;
+}
+
+.air-form {
+  margin-top: 10px;
+}
+
+.air-form fieldset{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.air-radio-group{
+  display: flex;
+}
+#air-radio {
+  margin: 0;
+  margin-right: 50px;
+
+
+
+}
+
+#air-radio::before {
+  content: "편도";
+  display: inline-block;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+#air-radio1 {
+
+  margin: 0;
+  margin-right: 48px;
+
+
+}
+
+#air-radio1::before {
+  content: "왕복";
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+
+  white-space: nowrap;
 }
 
 #btn-multi {
-  border: none;
-  color: #eee;
-  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  border: 0;
   background-color: transparent;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  
+}
+
+#btn-multi::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 4px 6px;
+  background-image: url("../img/icon-question.png");
+ 
+}
+.air-start-end, .air-option-search {
+  font-size: 0;
+  padding: 5px 0;
+}
+
+.air-form input,.air-form label {
+  height: 41px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  
+}
+
+.air-start-end {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#input-start {
+  border-radius: 10px 0 0 10px;
+}
+
+#input-start, #input-end{
+  
+  border-right: 1px solid #aaa;
+  width: 300px;
+  padding: 0 20px;
+
+  
+}
+
+#input-date {
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.air-start-end::before { 
+  content: "";
+  display: inline-block;
+  width: 50px;
+  top: 5px;
+  left: 249px;
+  height: 40px;
+  position: absolute;
+  background-position: 4px -4px;
+  background-repeat: no-repeat;
+  
+  background-image: url('../img/date-icon.gif');
+}
+
+
+.air-start-end::after { 
+  content: "";
+  display: inline-block;
+  width: 45px;
+  top: 5px;
+  right: 305px;
+  height: 40px;
+  position: absolute;
+  background-position: 4px -4px;
+  background-repeat: no-repeat;
+  background-image: url('../img/date-icon.gif');
+}
+
+
+
+.group {
+  display: flex;
+  flex-flow: column;
+}
+
+.air-option-search {
+  display: flex;
+}
+
+.air-option-search label{
+  display: flex;
+  flex-flow: row;
+  height: 30px;
+  color: #eee;
+  font-size: 1.2rem;
+}
+
+.air-option-search input {
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+#air-number,#air-option {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+
+
+.group {
+  position: relative;
+  justify-content: flex-end;
+}
+#btn-air-search {
+  width: 100px;
+  height: 41px;
+  margin:0;
+  
+  border: 0;
+  border: 1px solid #000;
+  font-weight: 700;
+  border-radius: 2px;
+  background: #a0e2f4;
+}
+
+.air-option-search [for="input-air-adult"]::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px 19px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
+
+}
+
+.air-option-search [for="input-air-adult"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px -20px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
+
+}
+
+
+.air-option-search [for="input-air-child"]::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px 19px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
+
+}
+
+.air-option-search [for="input-air-child"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px -20px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
+
+}
+
+.air-option-search [for="input-air-baby"]::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px 19px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
+
+}
+
+.air-option-search [for="input-air-baby"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 1px -20px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  border: 2px solid;
 }

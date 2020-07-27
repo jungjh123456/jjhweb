@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/koreanair.css">
 </head>
+
 <body>
   <section class="air-nav clearfix">
     <h1 class="a11y-hidden">항공권 예매</h1>
     <h2 class="air-korea">
       <button class="btn-air" type="button">항공권</button>
     </h2>
-    <h3 class="air-ticketing">예매</h3>
-    <button type="button" class="btn-air-normal" aria-label="일반 예매">
-      일반 예매
-    </button>
 
-    <form action="" method="POST" class="air-form">
-      <fieldset>
-        <legend class="a11y-hidden">항공권 예매</legend>
-        <div class="air-radio1">
-          <input type="radio"  id="air-radio">
-          <label for="air-radio" >편도</label>
-          <input type="radio" id="air-radio1">
-          <label for="air-radio1">왕복</label>
-     
-          <label for="btn-multi">다구간</label>
+    <div class="air-group">
 
-        <button type="button" id="btn-multi">다구간</button>
+      <div class="heading">
+        <h3 class="air-ticketing">예매</h3>
+
+        <div class="btn-group">
+          <button type="button" class="btn-air-normal" aria-label="일반 예매">
+            일반 예매
+          </button>
+        </div>
+        <button type="button" class="btn-air-bonus">
+          보너스 예매
+        </button>
       </div>
-        <div class="air-start-end">
-          <label for="input-start" class="a11y-hidden">출발지</label>
-            <input type="text" id="input-start" placeholder="출발지">
-          <label for="input-end" class="a11y-hidden">목적지</label>
-            <input type="text" id="input-end" placeholder="목적지">
+
+      <form action="" method="POST" class="air-form">
+        <fieldset>
+          <legend class="a11y-hidden">항공권 예매</legend>
+          <div class="air-radio-group">
+            <input type="radio" id="air-radio" title="편도">
+            <label for="air-radio" aria-label="편도"></label>
+            <input type="radio" id="air-radio1" title="왕복">
+            <label for="air-radio1" aria-label="왕복"></label>
+
+            <label for="btn-multi">
+
+              <button type="button" id="btn-multi">다구간</button>
+            </label>
+          </div>
+          <div class="air-start-end">
+            <label for="input-start" class="a11y-hidden">출발지</label>
+              <input type="text" id="input-start" placeholder="출발지">
          
-          <label for="input-date" class="a11y-hidden">가는 날/오는 날</label>
-            <input type="date" id="input-date" placeholder="가는 날/오는 날(YYYY-MM-DD)">
-        </div>
+            <label for="input-end" class="a11y-hidden">목적지</label>
+              <input type="text" id="input-end" placeholder="목적지">
         
-        <div class="air-option-search">
-          <label for="input-air-adult">성인</label>
-          <input type="number" id="input-air-adult">
-          <label for="input-air-child">소아<button type="button">?</button></label>
-          <input type="number" id="input-air-child">
-          <label for="input-air-baby">유아<button type="button">?</button></label>
-          <input type="number" id="input-air-baby">
-          <label for="air-number">좌석 등급</label>
-          <select name="air" id="air-number">
-            <optgroup label="좌석 등급">
-              <option value="일반석">일반석</option>
-              <option value="프레스티지석">프레스티지석</option>
-              <option value="일등석">일등석</option>
-            </optgroup>
-          </select>
-          <label for="air-option">좌석 등급</label>
-          <select name="air-option" id="air-option">
-            <optgroup label="좌석 등급">
-              <option value="주변일자 조회">
+            <label for="input-date">
+              <input type="date" id="input-date" value="가는 날/오는 날(YYYY-MM-DD)">
+            </label>
+          </div>
+
+          <div class="air-option-search">
+            <div class="group">
+              <label for="input-air-adult">성인</label>
+              <input type="number" id="input-air-adult"></div>
+            <div class="group">
+              <label for="input-air-child">소아</label>
+              <input type="number" id="input-air-child"></div>
+            <div class="group">
+              <label for="input-air-baby">유아</label>
+              <input type="number" id="input-air-baby"></div>
+            <div class="group">
+              <label for="air-number">좌석 등급</label>
+              <select name="air" id="air-number">
+                <optgroup label="좌석 등급">
+                  <option value="일반석">일반석</option>
+                  <option value="프레스티지석">프레스티지석</option>
+                  <option value="일등석">일등석</option>
+                </optgroup>
+              </select></div>
+            <div class="group">
+              <label for="air-option">좌석 등급</label>
+              <select name="air-option" id="air-option">
+                <optgroup label="좌석 등급">
+                  <option value="주변일자 조회">
                     주변일자 조회
-              </option>
-              <option value="마일리지 좌석승급 가능한 운임만 조회">
-                마일리지 좌석승급 가능한 운임만 조회
-   
-          </option>
-            </optgroup>
-          </select>
-          <label for="btn-air-search" class="a11y-hidden">항공편 조회</label>
-          <button type="submit" id="btn-air-search">항공편 조회</button>
-        </div>
-      </fieldset>
-    </form>
-    <button type="button" class="btn-air-bonus">
-      보너스 예매
-    </button>
-   
+                  </option>
+                  <option value="마일리지 좌석승급 가능한 운임만 조회">
+                    마일리지 좌석승급 가능한 운임만 조회
+
+                  </option>
+                </optgroup>
+              </select></div>
+            <div class="group">
+              <label for="btn-air-search" class="a11y-hidden">항공편 조회</label>
+              <button type="submit" id="btn-air-search">항공편 조회</button></div>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+
+
   </section>
 
 </body>
+
 </html>
