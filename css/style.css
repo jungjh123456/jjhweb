@@ -760,18 +760,124 @@ a {
 
 
 /* 슬로건 */
+
+
+
 .slogan {
-  background-color: orange;
+
+  position: relative;
+  padding: 15px 80px 15px 170px;
 }
 
-.footer-bg {
-  width: 100%;
-  background-color: purple;
+.slogan-heading {
+ 
+  width: 110px;
+  height: 83px;
+  position: absolute;
   display: flex;
-  flex-flow: column nowrap;
+  top: 50px;
+  left: 38px;
+  justify-content: center;
   align-items: center;
+}
+.slogan-heading::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/coffee.png') no-repeat 0 0 scroll;
+}
+
+.slogan-brief {
+  color: #A09784;
+}
+
+.slogan-brief q {
+  font-style: normal;
+}
+
+.slogan-brief q::after {
+  content: "";
+}
+
+.slogan-brief q::before {
+  font-size: 3rem;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+.footer-bg {
+  background: #aaa linear-gradient(180deg, #aaa, #eee);
+
+  
+  
 }
 
 .footer {
-  background-color: skyblue;
+  position: relative;
+  padding: 15px 80px 15px 40px;
+  
+  
 }
+.footer-logo {
+  float: left;
+  margin-right: 20px;
+}
+
+
+.guide-list {
+  float: left;
+  margin: 0;
+
+  padding-left: 0;
+  list-style: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #7b8385;
+  margin-bottom: 10px;
+}
+.guide-list li {
+  
+  display: inline-block;
+  color: #eee;
+}
+
+.guide-list a{
+  display: block;
+  padding: 8px 23px;
+}
+
+.address {
+
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.copylight {
+  
+  font-size: 1.4rem;
+
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+
+
+
+
+
+
+
+
+
+
