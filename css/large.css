@@ -1,0 +1,56 @@
+body {
+  font-size: 1.4rem;
+}
+.container {
+  justify-content: center;
+  
+}
+
+
+.appHeader, .appMain{
+  width: 1000px;
+}
+
+
+
+.brand {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.appHeader {
+  grid-template: repeat(2,50px) / repeat(2,1fr);
+  align-items: center;
+}
+.memberOnly {
+  grid-area: 1/2/2/3;
+  
+  
+  
+}
+.memberOnly li {
+
+}
+
+.memberOnly a {
+  
+}
+.searchForm {
+  text-align: right;
+  grid-area: 2/2/3/3;
+ 
+}
+
+  
+.appNavigation {
+  background-color: blue;
+  width: 100%;
+}
+
+.appMain {
+  background-color: chartreuse;
+}
+
+.appFooter {
+  background-color: gray;
+}
