@@ -70,10 +70,10 @@ body {
   height: 80px;
   margin: 0;
   margin-top: -12px;
-  
   background-color: #0180a3;
   cursor: pointer;
-  line-height: 100px;
+  line-height: 90px;
+  overflow: hidden;
 
 }
 
@@ -83,17 +83,15 @@ body {
   height: 32px;
   display: block;
   position: absolute;
-  
   top: -10px;
   left: 45px;
-  
   background-repeat: no-repeat;
   background-image: url('../img/air-port.png');
 }
 
 
 .group {
-  padding: 20px 10px;
+  padding: 15px 10px;
   margin-left: 100px;
 
 }
@@ -129,15 +127,16 @@ body {
   color: #eee;
 }
 .air-form {
-  
+ 
   padding: 0;
   margin: 0;
-  margin-left: 130px;
-  border: 1px solid;
-  
+  margin-left: 120px;
+
+  padding: 0 16px;
+
 }
 .air-radio-group {
-  
+  position: relative;
 }
 .air-form fieldset {
   padding: 0;
@@ -145,43 +144,40 @@ body {
   border: 0;
 }
 
-#air-radio {
-  margin: 0;
-  margin-right: 50px;
-  border: 1px solid;
 
+
+#air-radio, #air-radio1 {
+  vertical-align: middle;
+  margin-right: 2px;
+
+  
+}
+
+label[for="air-radio"]{
+  
+}
+.air-radio-group label{
+  display: inline;
+  
+  vertical-align: middle;
+  color: #eee;
 
 }
 
-#air-radio::before {
-  content: "편도";
-  
+.radio-group,.radio-group1 {
   display: inline-block;
-  color: rgb(255, 255, 255);
-  white-space: nowrap;
-  font-size: 1.2rem;
-  font-weight: 700;
+  margin-right: 20px;
+  vertical-align: middle;
+  
   
   
 }
+
 
 #air-radio1 {
 
-  margin: 0;
-  margin-right: 48px;
-
-
 }
 
-#air-radio1::before {
-  content: "왕복";
-  display: inline-block;
-  margin-left: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
 
 #btn-multi {
   margin: 0;
@@ -190,10 +186,7 @@ body {
   background-color: transparent;
   text-decoration: underline;
   color: rgb(255, 255, 255);
-
   align-items: center;
-
-  
 }
 
 #btn-multi::after {
@@ -235,14 +228,14 @@ body {
 #input-start, #input-end{
   
   border-right: 1px solid #aaa;
-  width: 300px;
+  width: 260px;
   padding: 0 20px;
 
   
 }
 
 #input-date {
-  width: 300px;
+  width: 260px;
   padding: 5px 10px;
   border-radius: 0 10px 10px 0;
 }
@@ -253,7 +246,7 @@ body {
   display: inline-block;
   width: 50px;
   top: 5px;
-  left: 249px;
+  left: 209px;
   height: 40px;
   position: absolute;
   background-position: 4px -4px;
@@ -268,13 +261,97 @@ body {
   display: inline-block;
   width: 45px;
   top: 5px;
-  right: 305px;
+  right: 265px;
   height: 40px;
   position: absolute;
   background-position: 4px -4px;
   background-repeat: no-repeat;
   background-image: url('../img/date-icon.gif');
 }
+
+/* air-option-search */
+
+.air-option-search {
+  height: 100px;
+}
+
+.people-group {
+  display: block;
+
+  height: 90px;
+  position: relative;
+}
+.people-group label {
+  display: block;
+  height: 30px;
+  color: #eee;
+  font-weight: 700;
+}
+
+.people-group input ,
+#air-option, #air-number{
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+
+
+#btn-air-search {
+  width: 100px;
+  height: 41px;
+  margin:0;
+  margin-top: 29px;
+  border: 0;
+  border: 1px solid #000;
+  font-weight: 700;
+  border-radius: 2px;
+  background: #a0e2f4;
+}
+
+
+.air-option-search [for="input-air-adult"]::after,
+.air-option-search [for="input-air-child"]::after,
+.air-option-search [for="input-air-baby"]::after {
+  content: "";
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 3px 19px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+ 
+
+}
+
+.air-option-search [for="input-air-adult"]::before,
+.air-option-search [for="input-air-child"]::before,
+.air-option-search [for="input-air-baby"]::before  {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 10px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 3.5px -20px;
+  background-color: #eee;
+  background-image: url('../img/btn-booking-both.png');
+  
+
+}
+
+
+
+
 
 /* 
 .air-nav {
